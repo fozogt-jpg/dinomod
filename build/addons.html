@@ -1,0 +1,12 @@
+<!doctype html><html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Addon Settings - Dinosaurmod</title><style>body[splash-theme="dark"]:not(.tw-loaded) {
+        background: #111;
+      }</style></head><body><script>(function() {
+        try {var localTheme = localStorage.getItem('tw:theme');} catch (e) {}
+        if (localTheme ? localTheme === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches) document.body.setAttribute('splash-theme', 'dark');
+        try {var accentTheme = localStorage.getItem('tw:accent');} catch (e) {}
+        if (accentTheme) document.body.setAttribute("coloraccent", accentTheme || "Lime Green")
+        if (accentTheme == null) document.body.setAttribute("coloraccent", "Lime Green")
+        window.Recolor = {
+          primary: getComputedStyle(document.body).getPropertyValue('--motion-primary')
+        }
+      })();</script><div id="app"></div><script src="js/vendors~addon-settings~credits~editor~embed~fullscreen~player~playground.5fb994a916c47f1ecd7a.js"></script><script src="js/vendors~addon-settings~editor~embed~fullscreen~player~playground.a7ad528607d6f55b3c51.js"></script><script src="js/addon-settings~editor~embed~fullscreen~player~playground.bb9ee155972f272d88b7.js"></script><script src="js/addon-settings~addons~editor~fullscreen~player~playground.af1d5b9c08d4d4cc51d7.js"></script><script src="js/addon-settings.1cc0d00e2f79fb6f5e4e.js"></script></body></html>
